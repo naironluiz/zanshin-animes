@@ -1,0 +1,236 @@
+html,
+body,
+ul,
+li,
+h1,
+p,
+h2,
+a {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    font-weight: 100;
+}
+
+.estrutura {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "header header header"
+        "sub sub sub"
+        "main main main"
+        "rodape rodape rodape";
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #f2f2f2;
+}
+
+
+
+/*HEADER*/
+
+
+.header {
+    grid-area: header;
+    color: black;
+    font-family: 'Russo One', sans-serif;
+    padding: 25px 0;
+    justify-items: center;
+    background-color: white;
+}
+
+.header-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.header a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+.header h1 {
+    font-size: 3em;
+}
+
+.menu ul {
+    display: flex;
+    font-size: 1.5em;
+}
+
+.menu ul li {
+    padding: 5px 0;
+}
+
+.menu ul li+li {
+    margin-left: 15px;
+}
+
+
+
+
+.busca input {
+    height: 46px;
+    padding: 15px 10px;
+    font-family: 'Roboto', sans-serif;
+    background: #F5EDED;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 4.8);
+    color: black;
+    font-size: 1.5em;
+    max-width: 223px;
+}
+
+/*SUB-HEADER*/
+
+.sub-header {
+    background: #000;
+    grid-area: sub;
+    padding: 22px 0;
+}
+
+.sub-header h1 {
+    color: red;
+    text-transform: uppercase;
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+.sub-header a:visited {
+    color: red;
+}
+
+/*MAIN*/
+
+.main {
+    max-width: 944px;
+    display: grid;
+    grid-template-columns: 443px 361px;
+    margin: 24px auto;
+    grid-area: main;
+    padding: 30px;
+    column-gap: 64px;
+    background: #fff;
+    box-shadow: .5px 1px gray;
+    border-radius: 1px;
+}
+
+.main h1 {
+    font-family: 'Russo One', sans-serif;
+    font-size: 2.25em;
+    text-transform: capitalize;
+    margin-top: 32px;
+    border-bottom: 1px solid;
+}
+
+.main h2 {
+    font-size: 1.5em;
+    font-family: 'Russo One', sans-serif;
+    text-transform: capitalize;
+}
+
+/*NOTICIAS*/
+
+.ultimas-noticias {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.ultimas-noticias>a>img {
+    max-width: 100%;
+    display: block;
+}
+
+
+.noticia {
+    display: flex;
+    margin-top: 29px;
+}
+
+.noticia-texto {
+    width: 273px;
+    height: 149px;
+    margin-left: 14px
+}
+
+.main h2 {
+    font-size: 1.5em;
+    font-family: 'Russo One', sans-serif;
+    text-transform: capitalize;
+}
+
+.noticia-texto {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.875em;
+}
+
+.noticia-texto a {
+    color: #FF0000;
+}
+
+.noticia-texto a+a {
+    float: right;
+}
+
+.noticia-texto p {
+    margin: 10px 0;
+}
+
+/*POPULARES*/
+
+.populares {
+    display: flex;
+    flex-direction: column;
+}
+
+.pop {
+    display: flex;
+    margin-top: 22px;
+}
+
+.pop-texto {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.pop-texto a {
+    text-transform: uppercase;
+}
+
+/*RODAPE*/
+
+.rodape {
+    max-width: 944px;
+    color: rgb(78, 78, 78);
+    grid-area: rodape;
+    margin: 0px auto 32px auto;
+    padding-left: 15px;
+    font-size: 0.875em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.lista-titulo {
+    font-weight: bold;
+}
