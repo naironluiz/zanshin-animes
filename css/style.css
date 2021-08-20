@@ -128,8 +128,10 @@ body {
     grid-area: main;
     padding: 30px;
     column-gap: 64px;
-    background: #fff;
-    box-shadow: .5px 1px gray;
+    background: rgb(241, 241, 241);
+    box-shadow: .5px 1px 3px gray;
+
+
     border-radius: 1px;
 }
 
