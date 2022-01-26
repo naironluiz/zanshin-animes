@@ -96,6 +96,14 @@ body {
     max-width: 223px;
 }
 
+#busca:focus{
+    background: white;
+}
+
+#busca:focus::placeholder{
+    color: transparent;
+}
+
 /*SUB-HEADER*/
 
 .sub-header {
@@ -133,6 +141,10 @@ body {
 
 
     border-radius: 1px;
+}
+
+.main a:hover{
+    text-decoration: underline;
 }
 
 .main h1 {
@@ -189,6 +201,15 @@ body {
     color: #FF0000;
 }
 
+.noticia-texto h2 a{
+    color: black;
+}
+
+.noticia-texto h2 a:hover{
+    color: #FF0000;
+    
+}
+
 .noticia-texto a+a {
     float: right;
 }
@@ -232,7 +253,28 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
 }
+.rodape a:hover{
+    text-decoration: underline;
+}
 
 .lista-titulo {
     font-weight: bold;
+    font-size: 1em;
+}
+
+.icone{
+height: 80px;
+width: 80px;
+}
+
+.icone-imagem{
+    height: 20px;
+    width: 20px;
+}
+
+/*MISC*/
+
+.header ul li a:hover{
+color: #FF0000;
+text-decoration: underline;
 }
