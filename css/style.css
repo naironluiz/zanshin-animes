@@ -126,14 +126,39 @@ body {
     color: red;
 }
 
+/* Header responsivo */
+.btnMenu{
+    display: none;
+  
+}
+
+
+
 
 /*HEADER MEDIA QUERY*/
 
-@media only screen and (max-width: 943px) {
-    body {
-      background-color: lightblue;
+@media  (max-width: 943px) {
+    .btnMenu{
+        display: block;
     }
+    .menu .listaMenu{
+        /* display: none; */
+        position: absolute; /*ele vai ficar em cima de qualquer coisa já por baixo */
+    }
+
+    .menu.active .listaMenu{  /* quando o menu tiver ativo */
+        display: flex;
+    }
+
+
+    .busca{
+        display: none; /*temporario */
+    }
+
+
   }
+
+
 
 
 

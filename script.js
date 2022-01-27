@@ -8,3 +8,13 @@ busca.addEventListener('focus', function(){
     console.log('oi')
 })
 */
+
+const btnMenu = document.querySelector('.btnMenu')
+
+function toggleMenu(){
+const menu = document.querySelector('.menu')
+menu.classList.toggle('active')
+}
+
+btnMenu.addEventListener('click', toggleMenu)
+
