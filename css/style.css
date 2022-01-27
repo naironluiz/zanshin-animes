@@ -132,7 +132,7 @@ body {
     max-width: 59rem;
     display: grid;
     grid-template-columns: 27.688rem 22.563rem;
-    margin: 24px auto;
+    margin: 1.5rem auto;
     grid-area: main;
     padding: 1.875rem;
     column-gap: 3rem;
